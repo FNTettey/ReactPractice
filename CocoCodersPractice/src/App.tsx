@@ -3,6 +3,7 @@ import Home from "./Home.tsx";
 import Images from "./images.tsx";
 import TodoList from "./TodoList.tsx";
 import About from "./About.tsx";
+import {MuiLoginForm} from "./components/MuiLoginForm.tsx";
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
 
         case "/TodoList":
             component = <TodoList />
+            break;
+        case "/Login":
+            component=<MuiLoginForm/>
             break;
         default:
             component = <Home />
